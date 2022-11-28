@@ -11,11 +11,14 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 app = Client(
     "LibraryBot",
-    bot_token="5913561812:AAHfAcCA_PKkBO0DgWuLhn7XUIaLlmsiOow"#Config.BOT_TOKEN,
-    api_id=1774230#Config.API_ID,
-    api_hash="b0829cf5b62052d6c8adee27b02f1f00"#Config.API_HASH,
-    #plugins=plugins, 
+    bot_token="5913561812:AAHfAcCA_PKkBO0DgWuLhn7XUIaLlmsiOow",
+    api_id=1774230,
+    api_hash="b0829cf5b62052d6c8adee27b02f1f00"
     )
+    #Config.BOT_TOKEN,
+    #Config.API_ID,
+    #Config.API_HASH,
+    #plugins=plugins, 
 
 
 
