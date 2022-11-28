@@ -3,6 +3,10 @@ import os
 #from config import Config
 import pyrogram
 from pyrogram import Client
+import pyrogram
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+
  
  
 logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
