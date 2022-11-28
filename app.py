@@ -1,6 +1,6 @@
 import logging
 import os
-from config import Config
+#from config import Config
 import pyrogram
 from pyrogram import Client
  
@@ -25,11 +25,11 @@ app = Client(
 @Client.on_message(filters.private & filters.command(["admin"]))
 async def settings(bot,message):
   #print(f"{message.chat.id}")
-  if int(message.chat.id) in Config.OWNER_ID:
-    await message.reply_text("<b>👤 Admin Pannel</b>",reply_markup=helper.AdminKeyboard)
-  else:
-    Chat_Id = message.chat.id
-    await message.reply_text("<b>💔 Only Admin Command!!</b>")
+  #if int(message.chat.id) in Config.OWNER_ID:
+  #await message.reply_text("<b>👤 Admin Pannel</b>",reply_markup=helper.AdminKeyboard)
+  #else:
+  #Chat_Id = message.chat.id
+  await message.reply_text("<b>💔 Only Admin Command!!</b>")
    
 
 
