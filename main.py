@@ -72,12 +72,12 @@ async def settings(bot,message):
 #if __name__ == "__main__":
     #app.run(debug=True,host="0.0.0.0", port=int(os.environ.get('PORT', 8080)))
 # Start Clients
-Bot.start()
+#Bot.start()
 #User.start()
 # Loop Clients till Disconnects
-idle()
+#idle()
 # After Disconnects,
 # Stop Clients
-Bot.stop()
+#Bot.stop()
 #User.stop()
  
