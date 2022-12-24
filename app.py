@@ -13,9 +13,9 @@ logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(name)s - %(level
 logger = logging.getLogger(__name__)
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-app = Client(
+Bot = Client(
     "LibraryBot",
-    bot_token="5913561812:AAHfAcCA_PKkBO0DgWuLhn7XUIaLlmsiOow",
+    bot_token="5976715403:AAGgEOL7PmixhQWfa7p3avxsGF9biQgtl90",
     api_id=1774230,
     api_hash="b0829cf5b62052d6c8adee27b02f1f00"
     )
@@ -26,7 +26,7 @@ app = Client(
 
 
 
-@Client.on_message(filters.private & filters.command(["admin"]))
+@Bot.on_message(filters.private & filters.command(["start"]))
 async def settings(bot,message):
   #print(f"{message.chat.id}")
   #if int(message.chat.id) in Config.OWNER_ID:
@@ -35,16 +35,25 @@ async def settings(bot,message):
   #Chat_Id = message.chat.id
   await message.reply_text("<b>💔 Only Admin Command!!</b>")
    
+@Bot.on_message(filters.private & filters.command("start2"))
+async def start_handler(_, event: Message):
+	await event.reply_photo("https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
+                                caption=Config.START_MSG.format(event.from_user.mention),
+                                reply_markup=InlineKeyboardMarkup([
+					[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')],
+					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")],
+					[InlineKeyboardButton("Donation", callback_data="Help_msg"),
+                                        InlineKeyboardButton("About", callback_data="About_msg")]
+				]))
 
 
 
-
-if __name__ == "__main__" :
+#if __name__ == "__main__" :
   #download_path = "Downloads/"
   #if not os.path.isdir(download_path):
     #os.mkdir(download_path)
   #plugins = dict(root="plugins")
-  app.run()
+#  app.run()
   
   
  
@@ -63,3 +72,13 @@ if __name__ == "__main__" :
 
 #if __name__ == "__main__":
     #app.run(debug=True,host="0.0.0.0", port=int(os.environ.get('PORT', 8080)))
+# Start Clients
+Bot.start()
+#User.start()
+# Loop Clients till Disconnects
+idle()
+# After Disconnects,
+# Stop Clients
+Bot.stop()
+#User.stop()
+ 
