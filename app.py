@@ -7,8 +7,8 @@ app = Flask(__name__)
 def hello_world():
   return 'GreyMatter_Bots'
 
-def Pyroggram():
-  print("akhil")
+#def Pyroggram():
+  #print("akhil")
   #Bot.start()
   #idle()
   #Bot.stop()
