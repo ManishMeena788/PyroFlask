@@ -5,7 +5,7 @@ import threading
 
 
 app = Flask(__name__)
-
+app.debug = True
 #pyro = Client("account")
 
 pyro = Client(
