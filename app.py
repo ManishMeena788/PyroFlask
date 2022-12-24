@@ -15,5 +15,5 @@ def Pyroggram():
  
  
 if __name__ == "__main__":
-    app.run(debug="True")
     Pyroggram()
+    app.run(debug="True")
