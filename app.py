@@ -1,6 +1,6 @@
 from flask import Flask
 from pyrogram import Client, filters, idle
-from main import Bot
+#from main import Bot
 import threading
 
 
