@@ -7,14 +7,13 @@ app = Flask(__name__)
 def hello_world():
   return 'GreyMatter_Bots'
 
-def Pyroggram():
-  print("akhil")
-  Bot.start()
-  idle()
-  Bot.stop()
+print("akhil")
+Bot.start()
+idle()
+Bot.stop()
  
- 
+
 if __name__ == "__main__":
     print("akhil2")
-    Pyroggram()
+    #Pyroggram()
     app.run(debug="True")
