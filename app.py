@@ -9,11 +9,12 @@ def hello_world():
 
 def Pyroggram():
   print("akhil")
-  #Bot.start()
-  #idle()
-  #Bot.stop()
+  Bot.start()
+  idle()
+  Bot.stop()
  
  
 if __name__ == "__main__":
+    print("akhil2")
     Pyroggram()
     app.run(debug="True")
