@@ -5,15 +5,17 @@ app = Flask(__name__)
  
 @app.route('/')
 def hello_world():
-  return 'GreyMatter_Bots'
+  return 'GreyMatter_Botskk'
 
-print("akhil")
-Bot.start()
-idle()
-Bot.stop()
- 
+def Pyroggram():
+  print("akhil")
+  Bot.start()
+  idle()
+  Bot.stop()
+
+
 
 if __name__ == "__main__":
     print("akhil2")
-    #Pyroggram()
     app.run(debug="True")
+    Pyroggram()
