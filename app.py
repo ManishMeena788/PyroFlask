@@ -35,16 +35,16 @@ async def settings(bot,message):
   #Chat_Id = message.chat.id
   await message.reply_text("<b>💔 Only Admin Command!!</b>")
    
-@Bot.on_message(filters.private & filters.command("start2"))
-async def start_handler(_, event: Message):
-	await event.reply_photo("https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
-                                caption=Config.START_MSG.format(event.from_user.mention),
-                                reply_markup=InlineKeyboardMarkup([
-					[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')],
-					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")],
-					[InlineKeyboardButton("Donation", callback_data="Help_msg"),
-                                        InlineKeyboardButton("About", callback_data="About_msg")]
-				]))
+#@Bot.on_message(filters.private & filters.command("start2"))
+#async def start_handler(_, event: Message):
+#	await event.reply_photo("https://telegra.ph/file/19eeb26fa2ce58765917a.jpg",
+#                                caption=Config.START_MSG.format(event.from_user.mention),
+#                                reply_markup=InlineKeyboardMarkup([
+#					[InlineKeyboardButton('❤ Donation Link', url='https://www.telegram.dog/greymatters_about')],
+#					[InlineKeyboardButton("Updates 𝙲𝚑𝚊𝚗𝚗𝚊𝚕", url="https://t.me/GreyMatter_Bots")],
+#					[InlineKeyboardButton("Donation", callback_data="Help_msg"),
+#                                        InlineKeyboardButton("About", callback_data="About_msg")]
+#				]))
 
 
 
