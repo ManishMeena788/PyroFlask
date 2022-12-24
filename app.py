@@ -15,6 +15,16 @@ pyro = Client(
     api_hash="b0829cf5b62052d6c8adee27b02f1f00"
     )
 
+@pyro.on_message(filters.private & filters.command(["start"]))
+async def settings(bot,message):
+  #print(f"{message.chat.id}")
+  #if int(message.chat.id) in Config.OWNER_ID:
+  #await message.reply_text("<b>👤 Admin Pannel</b>",reply_markup=helper.AdminKeyboard)
+  #else:
+  #Chat_Id = message.chat.id
+  await message.reply_text("<b>💔 Only Admin Command!!</b>")
+ 
+
 @app.route("/")
 def hello_worldyy():
     return str(pyro.get_me())
