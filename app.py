@@ -3,7 +3,7 @@ from pyrogram import Client, filters, idle
 from main import Bot
 app = Flask(__name__)
  
-@app.route('/start')
+@app.route('/')
 def hello_world():
   return 'GreyMatter_Bots'
 
