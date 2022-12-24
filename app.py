@@ -7,8 +7,8 @@ app = Flask(__name__)
 def hello_world():
   return 'GreyMatter_Bots'
 
-#def Pyroggram():
-  #print("akhil")
+def Pyroggram():
+  print("akhil")
   #Bot.start()
   #idle()
   #Bot.stop()
@@ -16,4 +16,4 @@ def hello_world():
  
 if __name__ == "__main__":
     app.run(debug="True")
-    #Pyroggram()
+    Pyroggram()
