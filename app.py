@@ -3,8 +3,7 @@ import os
 #from config import Config
 import pyrogram
 from pyrogram import Client
-import pyrogram
-from pyrogram import Client, filters
+from pyrogram import Client, filters, idle
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
  
